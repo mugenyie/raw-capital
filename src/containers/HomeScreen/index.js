@@ -3,9 +3,9 @@ import { Text, View, Settings } from 'react-native';
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
-import Icon from 'react-native-vector-icons/Ionicons';  
+import {Icon} from 'native-base';  
 
-import CommonStyles from '../../common/styles';
+import MainStyles from '../../common/MainStyles';
 import SplashScreen from '../../containers/SplashScreen';
 import SettingsScreen from '../../containers/SettingsScreen';
 import Color from '../../common/Color';
@@ -22,7 +22,7 @@ const TabNavigator = createBottomTabNavigator({
     navigationOptions:{  
       tabBarLabel:'Dashboard',  
       tabBarIcon:({tintColor})=>(  
-          <Icon name="md-stats" color={tintColor} size={25}/>  
+          <Icon name="ios-stats" color={tintColor} size={25}/>  
       )  
     }
   },
@@ -31,7 +31,7 @@ const TabNavigator = createBottomTabNavigator({
     navigationOptions:{  
       tabBarLabel:'Loans',  
       tabBarIcon:({tintColor})=>(  
-          <Icon name="md-card" color={tintColor} size={25}/>  
+          <Icon name="ios-card" color={tintColor} size={25}/>  
       )  
     }
   },
@@ -40,7 +40,7 @@ const TabNavigator = createBottomTabNavigator({
     navigationOptions:{  
       tabBarLabel:'Payments',  
       tabBarIcon:({tintColor})=>(  
-          <Icon name="md-cash" color={tintColor} size={25}/>  
+          <Icon name="ios-cash" color={tintColor} size={25}/>  
       )  
     }
   },
@@ -49,14 +49,14 @@ const TabNavigator = createBottomTabNavigator({
     navigationOptions:{  
       tabBarLabel:'Customers',  
       tabBarIcon:({tintColor})=>(  
-          <Icon name="md-people" color={tintColor} size={25}/>  
+          <Icon name="ios-people" color={tintColor} size={25}/>  
       )  
     }
   },
 },
 {
   tabBarOptions: {
-    activeTintColor: Color.PrimaryDark,
+    activeTintColor: "#000",
     inactiveTintColor: Color.LightGrey,
   },
 });

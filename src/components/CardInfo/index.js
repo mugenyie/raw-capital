@@ -1,9 +1,8 @@
 //import liraries
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Dimensions, TouchableOpacity } from 'react-native';
-import {Card} from 'react-native-elements';
-import CommonStyle from '../../common/styles';
-import Icon from 'react-native-vector-icons/AntDesign';
+import {Container, Content, Card, Icon} from 'native-base';
+import MainStyles from '../../common/MainStyles';
 import Color from '../../common/Color';
 
 
@@ -15,17 +14,17 @@ class CardInfo extends Component {
     render() {
         const {title, subTitle, number} = this.props;
         return (
-            <Card containerStyle={styles.container}>
+            <Card style={styles.container}>
                 <View style={{flex:1, flexDirection:'row'}}>
                     <View style={{flex:0.8}}>
-                        <Text style={[CommonStyle.HeadingOneLight, styles.cardTitle]}>{title}</Text>
-                        <Text style={[CommonStyle.HeadingOne, styles.cardNumber]}>${number}</Text>
-                        <Text style={[CommonStyle.HeadingOneLight, styles.cardSubTitle]}>{subTitle}</Text>
+                        <Text style={[MainStyles.HeadingOneLight, styles.cardTitle]}>{title}</Text>
+                        <Text style={[MainStyles.HeadingOne, styles.cardNumber]}>${number}</Text>
+                        <Text style={[MainStyles.HeadingOneLight, styles.cardSubTitle]}>{subTitle}</Text>
                     </View>
-                    <View style={{flex:0.1, borderLeftColor:'#ccc', borderLeftWidth: 0.5,height:120}} />
+                    <View style={{flex:0.1, borderLeftColor:'#ccc', borderLeftWidth: 0.5,height:140}} />
                     <View style={{flex:0.1}}>
                         <TouchableOpacity>
-                            <Icon style={{marginTop:40}} name="right" size={25} color="#888"/>
+                            <Icon style={{marginTop:40}} name="ios-arrow-forward" size={25} color="#888"/>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -38,15 +37,12 @@ class CardInfo extends Component {
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        elevation:2,
         height:180,
         marginLeft:15,
         marginRight:15,
+        padding:20,
         borderRadius:8,
-        backgroundColor: '#fff',
-        borderWidth:1,
-        borderColor:'#f8f8f8',
-        paddingTop:30
+        marginBottom: 20
     },
     cardTitle: {
         textAlign:'left',
