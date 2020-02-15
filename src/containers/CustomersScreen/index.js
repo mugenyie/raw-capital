@@ -20,7 +20,7 @@ class CustomerScreen extends Component {
                 <HeaderSearchBar />
                 <Content contentContainerStyle={{marginTop:40}}>
                     <View style={{width:ScreenWidth*0.96, marginLeft:ScreenWidth*0.02}}>
-                        <CustomerTable data={data} />
+                        <CustomerTable data={data} {...this.props} />
                     </View>
                 </Content>
             </Container>
