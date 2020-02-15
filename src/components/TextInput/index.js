@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Dimensions } from 'react-native';
 import Color from '../../common/Color';
-import CommonStyles from '../../common/styles';
+import MainStyles from '../../common/MainStyles';
 
 const ScreenWidth = Dimensions.get('window').width;
 
@@ -14,7 +14,7 @@ class TextInput extends Component {
     render() {
         return (
             <TextInput
-            style={[styles.Input,CommonStyles.HeadingOne,{fontSize:15}]}
+            style={[styles.Input,MainStyles.HeadingOne,{fontSize:15}]}
             onChangeText={inputdata => this.setState({inputdata})}
             value={this.state.inputdata}
             underlineColorAndroid="transparent"
@@ -27,7 +27,7 @@ class TextInput extends Component {
 const styles = StyleSheet.create({
     Input: {
         height: 40, 
-        width:ScreenWidth*0.8, 
+        width:ScreenWidth*0.9, 
         borderColor: Color.PrimaryDark, 
         borderWidth: 2, 
         borderRadius:8,

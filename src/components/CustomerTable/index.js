@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { DataTable } from 'react-native-paper';
 import {ScrollView, Image, Dimensions} from 'react-native';
-import MainStyles from '../../common/styles';
+import MainStyles from '../../common/MainStyles';
 
 export default class CustomerTable extends React.Component {
   render() {

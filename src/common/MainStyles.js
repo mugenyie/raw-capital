@@ -16,4 +16,4 @@ const MainStyles = StyleSheet.create({
     }
 });
 
-export default CommonStyle;
+export default MainStyles;
