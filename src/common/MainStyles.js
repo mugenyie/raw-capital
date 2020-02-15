@@ -2,10 +2,10 @@ import {StyleSheet} from 'react-native';
 
 const MainStyles = StyleSheet.create({
     HeadingOne: {
-        fontSize:22, fontFamily:'Montserrat-Regular'
+        fontSize:18, fontFamily:'Montserrat-Regular'
     },
     HeadingOneLight: {
-        fontSize:22, fontFamily:'Montserrat-Light'
+        fontSize:18, fontFamily:'Montserrat-Light'
     },
     Card: {
         borderRadius:8,
