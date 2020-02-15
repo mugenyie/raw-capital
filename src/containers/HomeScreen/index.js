@@ -15,6 +15,7 @@ import PaymentsScreen from '../PaymentsScreen';
 import CustomersScreen from '../CustomersScreen';
 import LoginScreen from '../LoginScreen';
 import CustomerProfile from '../CustomerProfile';
+import IssueLoanScreen from '../IssueLoanScreen';
 
 
 const TabNavigator = createBottomTabNavigator({
@@ -86,7 +87,8 @@ const StackNavigator = createStackNavigator({
     }
   },
   Settings: SettingsScreen,
-  Profile: CustomerProfile
+  Profile: CustomerProfile,
+  IssueLoan: IssueLoanScreen
 });
 
 export default createAppContainer(StackNavigator);

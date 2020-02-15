@@ -35,7 +35,9 @@ class CustomerScreen extends Component {
                             <Text style={MainStyles.HeadingOne,{fontSize:13}}>SETTINGS</Text>
                             <Icon name="ios-settings" size={20} style={{padding:10}}/>
                         </Button>
-                        <Button transparent style={{backgroundColor:'#fff', flex:0.48, marginTop:20,alignContent:'center',justifyContent:'center',height:32,borderRadius:4, borderWidth:1,borderColor:'#ccc'}}>
+                        <Button 
+                        onPress={() => this.props.navigation.navigate("IssueLoan")}
+                        transparent style={{backgroundColor:'#fff', flex:0.48, marginTop:20,alignContent:'center',justifyContent:'center',height:32,borderRadius:4, borderWidth:1,borderColor:'#ccc'}}>
                             <Text style={MainStyles.HeadingOne,{fontSize:13}}>ISSUE LOAN</Text>
                             <Icon name="md-share-alt" size={20} style={{padding:10}}/>
                         </Button>
