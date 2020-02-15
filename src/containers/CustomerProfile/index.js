@@ -31,7 +31,9 @@ class CustomerScreen extends Component {
                         </View>
                     </View>
                     <View style={{flexDirection:'row',justifyContent:'space-around'}}>
-                        <Button transparent style={{backgroundColor:'#fff', flex:0.48, marginTop:20,alignContent:'center',justifyContent:'center',height:32,borderRadius:4, borderWidth:1,borderColor:'#ccc'}}>
+                        <Button
+                        onPress={() => this.props.navigation.navigate("CustomerSettings")}
+                         transparent style={{backgroundColor:'#fff', flex:0.48, marginTop:20,alignContent:'center',justifyContent:'center',height:32,borderRadius:4, borderWidth:1,borderColor:'#ccc'}}>
                             <Text style={MainStyles.HeadingOne,{fontSize:13}}>SETTINGS</Text>
                             <Icon name="ios-settings" size={20} style={{padding:10}}/>
                         </Button>

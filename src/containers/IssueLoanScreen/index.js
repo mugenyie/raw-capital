@@ -9,7 +9,7 @@ const ScreenWidth = Dimensions.get('window').width;
 // create a component
 class IssueLoanScreen extends Component {
     state = {
-        amount:'1000',
+        amount:'1,000',
         tenure:'30',
         rate:'10'
     }
