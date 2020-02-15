@@ -2,8 +2,10 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Dimensions, ScrollView, TouchableOpacity, FlatList } from 'react-native';
 import CardInfo from '../../components/CardInfo';
-import {Icon, Header, Right, Left, Body, Title} from 'native-base';
+import {Icon, Header, Right, Left, Body, Title, Drawer} from 'native-base';
+import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';
 
+import SideBar from './SideBar';
 import Color from '../../common/Color';
 import MainStyles from '../../common/MainStyles';
 
@@ -12,15 +14,30 @@ const ScreenHeight = Dimensions.get('window').height;
 
 // create a component
 class DashboardScreen extends Component {
+    closeDrawer  = () => {
+        this.drawer._root.close()
+    };
+    openDrawer = () => { 
+        this.drawer._root.open() 
+    };
+
     _renderLeftHeaderCompent = () => {
         return(
-            <Icon name="ios-menu" size={24} color={Color.PrimaryDark}/>
+            <TouchableOpacity
+            onPress={() => this.openDrawer()}
+            >
+                <Icon name="ios-menu" size={24} color={Color.PrimaryDark}/>
+            </TouchableOpacity>
         )
     }
 
     _renderRightHeaderCompent = () => {
         return(
-            <Icon name="md-more" size={20} color={Color.PrimaryDark}/>
+            <TouchableOpacity
+            onPress={() => alert("Are you sure you want to logOut ?")}
+            >
+                <Icon name="ios-power" size={20} color={Color.PrimaryDark}/>
+            </TouchableOpacity>
         )
     }
 
@@ -28,30 +45,37 @@ class DashboardScreen extends Component {
     render() {
 
         return (
-            <View style={styles.container}>
-                <Header style={{backgroundColor:'#fff',borderBottomWidth:0.5,borderBottomColor:'#ccc'}}>
-                    <Left>
-                        {this._renderLeftHeaderCompent()}
-                    </Left>
-                    <Body>
-                        <Title style={[MainStyles.HeadingOne, {color:'#000'}]}>
-                        Raw Capital
-                        </Title>
-                    </Body>
-                    <Right>
-                        {this._renderRightHeaderCompent()}
-                    </Right>
-                </Header>
-                <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
-                    
+            <Drawer 
+            ref={(ref) => { this.drawer = ref; }} 
+            content={<SideBar navigator={this.navigator} />} 
+            onClose={() => this.closeDrawer()} >
+                <GestureRecognizer 
+                onSwipeRight={() => this.openDrawer()}
+                style={styles.container}>
+                    <Header style={{backgroundColor:'#fff',borderBottomWidth:0.5,borderBottomColor:'#ccc'}}>
+                        <Left>
+                            {this._renderLeftHeaderCompent()}
+                        </Left>
+                        <Body>
+                            <Title style={[MainStyles.HeadingOne, {color:'#000'}]}>
+                            Raw Capital
+                            </Title>
+                        </Body>
+                        <Right>
+                            {this._renderRightHeaderCompent()}
+                        </Right>
+                    </Header>
+                    <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
+                        
 
-                    <View style={{flex:1, marginTop:14, marginBottom: 20}}>
-                        <CardInfo title="LOAN BOOK" subTitle="Total amount of money currently lent out" number="UGX 90,000" />
-                        <CardInfo title="PROFIT / LOSS" subTitle="" number="UGX -1,000"/>
-                        <CardInfo title="CUSTOMERS" subTitle="" number="200"/>
-                    </View>
-                </ScrollView>
-            </View>
+                        <View style={{flex:1, marginTop:14, marginBottom: 20}}>
+                            <CardInfo title="LOAN BOOK" subTitle="Total amount of money currently lent out" number="UGX 90,000" />
+                            <CardInfo title="PROFIT / LOSS" subTitle="" number="UGX -1,000"/>
+                            <CardInfo title="CUSTOMERS" subTitle="" number="200"/>
+                        </View>
+                    </ScrollView>
+                </GestureRecognizer>
+            </Drawer>
         );
     }
 }
