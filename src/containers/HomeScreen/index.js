@@ -16,6 +16,7 @@ import CustomersScreen from '../CustomersScreen';
 import LoginScreen from '../LoginScreen';
 import CustomerProfile from '../CustomerProfile';
 import IssueLoanScreen from '../IssueLoanScreen';
+import CustomerSettingsScreen from '../CustomerSettingsScreen';
 
 
 const TabNavigator = createBottomTabNavigator({
@@ -88,7 +89,18 @@ const StackNavigator = createStackNavigator({
   },
   Settings: SettingsScreen,
   Profile: CustomerProfile,
-  IssueLoan: IssueLoanScreen
+  IssueLoan: {
+    screen: IssueLoanScreen,
+    navigationOptions:{
+      title:"Issue Loan"
+    }
+  },
+  CustomerSettings: {
+    screen: CustomerSettingsScreen,
+    navigationOptions:{
+      title:"Settings"
+    }
+  },
 });
 
 export default createAppContainer(StackNavigator);
