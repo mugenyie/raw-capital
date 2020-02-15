@@ -1,27 +1,32 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Dimensions } from 'react-native';
+import {Container, Content, Card} from 'native-base';
+import HeaderSearchBar from '../../components/HeaderSearchBar';
+import CustomerTable from '../../components/CustomerTable';
 
+const ScreenWidth = Dimensions.get('window').width;
 // create a component
+const data = [
+    {},
+    {}
+];
+
 class CustomerScreen extends Component {
+
     render() {
         return (
-            <View style={styles.container}>
-                <Text>CustomerScreen</Text>
-            </View>
+            <Container>
+                <HeaderSearchBar />
+                <Content contentContainerStyle={{marginTop:40}}>
+                    <View style={{width:ScreenWidth*0.96, marginLeft:ScreenWidth*0.02}}>
+                        <CustomerTable data={data} {...this.props} />
+                    </View>
+                </Content>
+            </Container>
         );
     }
 }
-
-// define your styles
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#FFFFFF',
-    },
-});
 
 //make this component available to the app
 export default CustomerScreen;

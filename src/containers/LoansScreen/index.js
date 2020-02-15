@@ -1,7 +1,7 @@
 //import liraries
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Dimensions, FlatList, ScrollView, Button } from 'react-native';
-import CommomStyles from '../../common/styles';
+import MainStyles from '../../common/MainStyles';
 import Color from '../../common/Color';
 
 const ScreenWidth = Dimensions.get('window').width;

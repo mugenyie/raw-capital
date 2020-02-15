@@ -1,10 +1,9 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Image, TextInput, Dimensions } from 'react-native';
-import {Button} from 'react-native-elements';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { View, Text, StyleSheet, Image, Dimensions, TextInput } from 'react-native';
+import {Icon, Button} from 'native-base';
 import Images from '../../common/Images';
-import CommonStyles from '../../common/styles';
+import MainStyles from '../../common/MainStyles';
 import Color from '../../common/Color';
 
 const ScreenWidth = Dimensions.get('window').width;
@@ -25,36 +24,34 @@ class LoginScreen extends Component {
                     resizeMode='contain'
                     source={Images.LogoWhite}
                     />
-                    <Text style={[CommonStyles.HeadingOne,{color:Color.PrimaryDark}]}>Raw Capital</Text>
+                    <Text style={[MainStyles.HeadingOne,{color:Color.PrimaryDark}]}>Raw Capital</Text>
                 </View>
 
                 <View>
-                    <Icon style={styles.iconStyle} color={Color.PrimaryDark} name="md-person" size={25}/>
+                    <Icon style={styles.iconStyle} color={Color.PrimaryDark} name="ios-person" size={25}/>
                     <TextInput
-                    style={[styles.Input,CommonStyles.HeadingOne,{fontSize:15}]}
+                    style={[styles.Input,MainStyles.HeadingOne,{fontSize:15}]}
                     onChangeText={username => this.setState({username})}
                     value={this.state.username}
                     underlineColorAndroid="transparent"
                     />
                 </View>
 
-                <View>
-                    <Icon style={styles.iconStyle} color={Color.PrimaryDark} name="md-lock" size={25}/>
+                <View style={{marginTop:10}}>
+                    <Icon style={styles.iconStyle} color={Color.PrimaryDark} name="ios-lock" size={25}/>
                     <TextInput
                     autoCorrect={false}
                     secureTextEntry
-                    style={[styles.Input,CommonStyles.HeadingOne,{fontSize:15}]}
+                    style={[styles.Input,MainStyles.HeadingOne,{fontSize:24}]}
                     onChangeText={username => this.setState({username})}
                     value={this.state.username}
                     underlineColorAndroid="transparent"
                     />
                 </View>
 
-                <Button
-                title="Login"
-                buttonStyle={styles.buttonStyle}
-                onPress={() => this.props.navigation.navigate("HomeScreen")}
-                />
+                <Button style={[styles.buttonStyle,{justifyContent:'center',alignContent:'center'}]} onPress={() => this.props.navigation.navigate("HomeScreen")}>
+                    <Text style={[MainStyles.HeadingOne,{fontSize:18,color:'#fff'}]}>LOGIN</Text>
+                </Button>
 
             </View>
         );
@@ -71,25 +68,26 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
     },
     Input: {
-        height: 40, 
-        width:ScreenWidth*0.8, 
-        borderColor: Color.PrimaryDark, 
-        borderWidth: 2, 
+        height: 50, 
+        width:ScreenWidth*0.9, 
+        elevation: 1,
+        borderColor:'#ccc',
+        borderWidth: 0.2, 
         borderRadius:8,
-        marginTop:10,
-        paddingLeft: 40
+        marginTop:8,
+        paddingLeft: 50
     },
     buttonStyle: {
-        width:ScreenWidth*0.4, 
+        width:ScreenWidth*0.5, 
         borderRadius:8,
-        height:40,
-        marginTop: 100,
+        height:50,
+        marginTop: 60,
         backgroundColor:Color.PrimaryDark
     },
     iconStyle: {
         position: 'absolute',
         top: 16,
-        left: 10
+        left: 20
     }
 });
 

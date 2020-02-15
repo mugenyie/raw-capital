@@ -1,13 +1,11 @@
 //import liraries
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Dimensions, ScrollView, TouchableOpacity, FlatList } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
-import Icon2 from 'react-native-vector-icons/FontAwesome5';
-import {Header, Card} from 'react-native-elements';
 import CardInfo from '../../components/CardInfo';
+import {Icon, Header, Right, Left, Body, Title} from 'native-base';
 
 import Color from '../../common/Color';
-import CommonStyles from '../../common/styles';
+import MainStyles from '../../common/MainStyles';
 
 const ScreenWidth = Dimensions.get('window').width;
 const ScreenHeight = Dimensions.get('window').height;
@@ -16,13 +14,13 @@ const ScreenHeight = Dimensions.get('window').height;
 class DashboardScreen extends Component {
     _renderLeftHeaderCompent = () => {
         return(
-            <Icon name="md-menu" size={24} color={Color.PrimaryDark}/>
+            <Icon name="ios-menu" size={24} color={Color.PrimaryDark}/>
         )
     }
 
     _renderRightHeaderCompent = () => {
         return(
-            <Icon2 name="ellipsis-v" size={20} color={Color.PrimaryDark}/>
+            <Icon name="md-more" size={20} color={Color.PrimaryDark}/>
         )
     }
 
@@ -31,16 +29,19 @@ class DashboardScreen extends Component {
 
         return (
             <View style={styles.container}>
-                <Header
-                containerStyle={{
-                    marginTop:-30,
-                    backgroundColor: '#fff',
-                    elevation:1
-                }}
-                leftComponent={this._renderLeftHeaderCompent()}
-                centerComponent={{ text: 'Raw Capital', style: [CommonStyles.HeadingOne, { color: Color.PrimaryDark, fontSize:20 }] }}
-                rightComponent={this._renderRightHeaderCompent()}
-                />
+                <Header style={{backgroundColor:'#fff',borderBottomWidth:0.5,borderBottomColor:'#ccc'}}>
+                    <Left>
+                        {this._renderLeftHeaderCompent()}
+                    </Left>
+                    <Body>
+                        <Title style={[MainStyles.HeadingOne, {color:'#000'}]}>
+                        Raw Capital
+                        </Title>
+                    </Body>
+                    <Right>
+                        {this._renderRightHeaderCompent()}
+                    </Right>
+                </Header>
                 <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
                     
 
