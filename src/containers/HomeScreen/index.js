@@ -75,7 +75,7 @@ const RootNavigator = createSwitchNavigator(
 );
 
 const StackNavigator = createStackNavigator({
-  AppEntry: {
+  Home: {
     screen: RootNavigator,
     navigationOptions: {
       headerShown: false
