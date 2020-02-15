@@ -46,9 +46,9 @@ class DashboardScreen extends Component {
                     
 
                     <View style={{flex:1, marginTop:14, marginBottom: 20}}>
-                        <CardInfo title="LOAN BOOK" subTitle="Total amount of money currently lent out" number={1000} />
-                        <CardInfo title="PROFIT / LOSS" subTitle="" number={-900}/>
-                        <CardInfo title="CUSTOMERS" subTitle="" number={200}/>
+                        <CardInfo title="LOAN BOOK" subTitle="Total amount of money currently lent out" number="UGX 90,000" />
+                        <CardInfo title="PROFIT / LOSS" subTitle="" number="UGX -1,000"/>
+                        <CardInfo title="CUSTOMERS" subTitle="" number="200"/>
                     </View>
                 </ScrollView>
             </View>

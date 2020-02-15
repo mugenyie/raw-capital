@@ -18,13 +18,13 @@ class CardInfo extends Component {
                 <View style={{flex:1, flexDirection:'row'}}>
                     <View style={{flex:0.8}}>
                         <Text style={[MainStyles.HeadingOneLight, styles.cardTitle]}>{title}</Text>
-                        <Text style={[MainStyles.HeadingOne, styles.cardNumber]}>${number}</Text>
+                        <Text style={[MainStyles.HeadingOne, styles.cardNumber]}>{number}</Text>
                         <Text style={[MainStyles.HeadingOneLight, styles.cardSubTitle]}>{subTitle}</Text>
                     </View>
                     <View style={{flex:0.1, borderLeftColor:'#ccc', borderLeftWidth: 0.5,height:140}} />
                     <View style={{flex:0.1}}>
                         <TouchableOpacity>
-                            <Icon style={{marginTop:40}} name="ios-arrow-forward" size={25} color="#888"/>
+                            <Icon style={{marginTop:50}} name="ios-arrow-forward" size={25} color="#888"/>
                         </TouchableOpacity>
                     </View>
                 </View>
