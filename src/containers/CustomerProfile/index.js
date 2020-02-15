@@ -8,7 +8,7 @@ import MainStyles from '../../common/MainStyles';
 import Color from '../../common/Color';
 
 const ScreenWidth = Dimensions.get('window').width;
-const ImageWidth = 0.4;
+const ImageWidth = 0.3;
 // create a component
 class CustomerScreen extends Component {
     render() {
@@ -34,14 +34,14 @@ class CustomerScreen extends Component {
                         <Button
                         onPress={() => this.props.navigation.navigate("CustomerSettings")}
                          transparent style={{backgroundColor:'#fff', flex:0.48, marginTop:20,alignContent:'center',justifyContent:'center',height:32,borderRadius:4, borderWidth:1,borderColor:'#ccc'}}>
+                            <Icon name="ios-settings" size={18} style={{position:'absolute', left:32, top:5}}/>
                             <Text style={MainStyles.HeadingOne,{fontSize:13}}>SETTINGS</Text>
-                            <Icon name="ios-settings" size={20} style={{padding:10}}/>
                         </Button>
                         <Button 
                         onPress={() => this.props.navigation.navigate("IssueLoan")}
                         transparent style={{backgroundColor:'#fff', flex:0.48, marginTop:20,alignContent:'center',justifyContent:'center',height:32,borderRadius:4, borderWidth:1,borderColor:'#ccc'}}>
+                            <Icon name="md-share-alt" size={18} style={{position:'absolute', left:32, top:5}}/>
                             <Text style={MainStyles.HeadingOne,{fontSize:13}}>ISSUE LOAN</Text>
-                            <Icon name="md-share-alt" size={20} style={{padding:10}}/>
                         </Button>
                     </View>
                     <View style={{flexDirection:'row',justifyContent:'space-around',marginTop:40}}>
