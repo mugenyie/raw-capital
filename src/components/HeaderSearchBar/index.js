@@ -9,7 +9,7 @@ import Color from '../../common/Color';
 class HeaderSearchBar extends Component {
     render() {
         return (
-            <Header searchBar rounded style={{backgroundColor:Color.PrimaryDark}}>
+            <Header searchBar rounded iosBarStyle="dark-content">
                 <Item>
                     <Icon name="ios-search" />
                     <Input placeholder="Search customer name..." />

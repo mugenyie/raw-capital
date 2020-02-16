@@ -10,35 +10,30 @@ export default class LoansTable extends React.Component {
             <DataTable>
                 <DataTable.Header>
                     <DataTable.Title>DATE</DataTable.Title>
-                    <DataTable.Title>PRODUCT</DataTable.Title>
                     <DataTable.Title>ISSUED</DataTable.Title>
                     <DataTable.Title>PAID-BACK</DataTable.Title>
                 </DataTable.Header>
 
                 <DataTable.Row>
                     <DataTable.Cell>Aug 14, 2019</DataTable.Cell>
-                    <DataTable.Cell>MTN</DataTable.Cell>
                     <DataTable.Cell>10,000</DataTable.Cell>
                     <DataTable.Cell>5,000</DataTable.Cell>
                 </DataTable.Row>
 
                 <DataTable.Row>
                     <DataTable.Cell>Aug 14, 2019</DataTable.Cell>
-                    <DataTable.Cell>MTN</DataTable.Cell>
                     <DataTable.Cell>10,000</DataTable.Cell>
                     <DataTable.Cell>5,000</DataTable.Cell>
                 </DataTable.Row>
 
                 <DataTable.Row>
                     <DataTable.Cell>Aug 14, 2019</DataTable.Cell>
-                    <DataTable.Cell>MTN</DataTable.Cell>
                     <DataTable.Cell>10,000</DataTable.Cell>
                     <DataTable.Cell>5,000</DataTable.Cell>
                 </DataTable.Row>
 
                 <DataTable.Row>
                     <DataTable.Cell>Aug 14, 2019</DataTable.Cell>
-                    <DataTable.Cell>MTN</DataTable.Cell>
                     <DataTable.Cell>10,000</DataTable.Cell>
                     <DataTable.Cell>5,000</DataTable.Cell>
                 </DataTable.Row>

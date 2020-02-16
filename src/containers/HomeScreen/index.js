@@ -29,24 +29,6 @@ const TabNavigator = createBottomTabNavigator({
       )  
     }
   },
-  Loans: {
-    screen: LoansScreen,
-    navigationOptions:{  
-      tabBarLabel:'Loans',  
-      tabBarIcon:({tintColor})=>(  
-          <Icon name="ios-card" color={tintColor} size={25}/>  
-      )  
-    }
-  },
-  Payments: {
-    screen: PaymentsScreen,
-    navigationOptions:{  
-      tabBarLabel:'Payments',  
-      tabBarIcon:({tintColor})=>(  
-          <Icon name="ios-cash" color={tintColor} size={25}/>  
-      )  
-    }
-  },
   Customers: {
     screen: CustomersScreen,
     navigationOptions:{  
@@ -56,6 +38,24 @@ const TabNavigator = createBottomTabNavigator({
       )  
     }
   },
+  Loans: {
+    screen: LoansScreen,
+    navigationOptions:{  
+      tabBarLabel:'Loans',  
+      tabBarIcon:({tintColor})=>(  
+          <Icon name="ios-card" color={tintColor} size={25}/>  
+      )  
+    }
+  },
+  Paybacks: {
+    screen: PaymentsScreen,
+    navigationOptions:{  
+      tabBarLabel:'Payments',  
+      tabBarIcon:({tintColor})=>(  
+          <Icon name="ios-cash" color={tintColor} size={25}/>  
+      )  
+    }
+  }
 },
 {
   tabBarOptions: {

@@ -22,7 +22,7 @@ class CustomerSettingsScreen extends Component {
                     <Text style={MainStyles.HeadingOne}>Is Active</Text>
                     </Body>
                     <Right>
-                    <Switch thumbColor={Color.PrimaryDark} trackColor={{false:"",true:""}} value={true} />
+                    <Switch thumbColor={Color.PrimaryDark} trackColor={{false:"green",true:"#ccc"}} value={true} />
                     </Right>
                 </ListItem>
 
@@ -35,7 +35,7 @@ class CustomerSettingsScreen extends Component {
                     </Body>
                     <Right>
                     <TextInput
-                    style={[MainStyles.HeadingOne,{borderBottomColor:'#000',borderBottomWidth:1, paddingBottom:0,width:100}]}
+                    style={[MainStyles.HeadingOne,{borderBottomColor:'#000',borderBottomWidth:1, paddingBottom:0,marginBottom:-10,width:100}]}
                     onChangeText={limit => this.setState({limit})}
                     value={this.state.limit}
                     underlineColorAndroid="transparent"

@@ -34,14 +34,14 @@ class CustomerScreen extends Component {
                         <Button
                         onPress={() => this.props.navigation.navigate("CustomerSettings")}
                          transparent style={{backgroundColor:'#fff', flex:0.48, marginTop:20,alignContent:'center',justifyContent:'center',height:32,borderRadius:4, borderWidth:1,borderColor:'#ccc'}}>
-                            <Icon name="ios-settings" size={18} style={{position:'absolute', left:32, top:5}}/>
-                            <Text style={MainStyles.HeadingOne,{fontSize:13}}>SETTINGS</Text>
+                            <Icon name="ios-settings" size={18} style={{position:'absolute', left:30, top:5}}/>
+                            <Text style={MainStyles.HeadingOne,{fontSize:13,paddingLeft:10}}>SETTINGS</Text>
                         </Button>
                         <Button 
                         onPress={() => this.props.navigation.navigate("IssueLoan")}
                         transparent style={{backgroundColor:'#fff', flex:0.48, marginTop:20,alignContent:'center',justifyContent:'center',height:32,borderRadius:4, borderWidth:1,borderColor:'#ccc'}}>
-                            <Icon name="md-share-alt" size={18} style={{position:'absolute', left:32, top:5}}/>
-                            <Text style={MainStyles.HeadingOne,{fontSize:13}}>ISSUE LOAN</Text>
+                            <Icon name="md-share-alt" size={18} style={{position:'absolute', left:30, top:5}}/>
+                            <Text style={MainStyles.HeadingOne,{fontSize:13,paddingLeft:10}}>ISSUE LOAN</Text>
                         </Button>
                     </View>
                     <View style={{flexDirection:'row',justifyContent:'space-around',marginTop:40}}>
