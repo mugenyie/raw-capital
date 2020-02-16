@@ -21,11 +21,11 @@ class LoansScreen extends Component {
                 <SimpleHeader {...this.props} HeaderTitle="Loans Issued"/>
                 <DateRange />
                 <Button
-                style={[MainStyles.ButtonStyle,{width:ScreenWidth*0.8,alignSelf:"center",elevation:0}]}
+                style={[MainStyles.ButtonStyle,{width:ScreenWidth*0.9,alignSelf:"center",elevation:0,height:34}]}
                 >
-                    <Text style={[MainStyles.HeadingOne,{color:'#fff'}]}>Load data</Text>
+                    <Text style={[MainStyles.HeadingOne,{color:'#fff',fontSize:18}]}>Load data</Text>
                 </Button>
-                <View style={{paddingTop:40}}/>
+                <View style={{paddingTop:20}}/>
                 <LoansTable />
             </Container>
         );

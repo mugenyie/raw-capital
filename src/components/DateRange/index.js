@@ -1,9 +1,13 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, Dimensions } from "react-native";
+import Icon from 'react-native-vector-icons/Ionicons';
 import  moment  from  "moment";
 import DateRangePicker from "react-native-daterange-picker";
 
 import MainStyles from '../../common/MainStyles';
+
+const ScreenWidth = Dimensions.get('window').width;
+const ScreenHeight = Dimensions.get('window').height;
  
 export default class DateRange extends React.Component {
   constructor(props) {
@@ -24,8 +28,6 @@ export default class DateRange extends React.Component {
   render() {
     const { startDate, endDate, displayedDate } = this.state;
     return (
-      // <View style={styles.container}>
-
         <DateRangePicker
           onChange={this.setDates}
           endDate={endDate}
@@ -40,25 +42,30 @@ export default class DateRange extends React.Component {
           flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
             
           <View style={{flexDirection:'row'}}>
-            <Text style={[MainStyles.HeadingOne,{marginRight:20}]}>From: 
-              <Text style={MainStyles.HeadingOneLight}>  {startDate == null ? "null":startDate.format('YYYY-MM-DD')} {"\n"}</Text>
+            <Text style={[MainStyles.HeadingOne,{marginRight:20,fontSize:15}]}>From: 
+              <Text style={[MainStyles.HeadingOneLight,{fontSize:15}]}>  {startDate == null ? "null":startDate.format('YYYY-MM-DD')} {"\n"}</Text>
             </Text>
-            <Text style={MainStyles.HeadingOne}>To: 
-              <Text style={MainStyles.HeadingOneLight}>  {endDate == null ? "null": endDate.format('YYYY-MM-DD')}</Text>
+            <Text style={[MainStyles.HeadingOne,{fontSize:15}]}>To: 
+              <Text style={[MainStyles.HeadingOneLight,{fontSize:15}]}>  {endDate == null ? "null": endDate.format('YYYY-MM-DD')}</Text>
             </Text>
           </View>
-          <Text 
-            style={[MainStyles.HeadingOne,{
-              width:200,
-              textAlign:'center',
+          <View 
+            style={{
+              flexDirection:'row',
+              justifyContent:'space-around',
+              width:230,
               borderWidth:1,borderColor:'#ccc',
-              borderRadius:4,padding:10}]}
+              borderRadius:4,padding:8}}
             >
-            Select Date Range
-            </Text>
+              <Icon name="ios-options" size={18}/>
+              <Text 
+              style={[MainStyles.HeadingOne,{fontSize:15,textAlign:'center'}]}
+              >
+                Select Date Range
+              </Text>
+            </View>
           </View>
         </DateRangePicker>
-      // </View>
     );
   }
 }
