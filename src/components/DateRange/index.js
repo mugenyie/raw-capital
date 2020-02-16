@@ -24,8 +24,8 @@ export default class DateRange extends React.Component {
   render() {
     const { startDate, endDate, displayedDate } = this.state;
     return (
-      <View style={styles.container}>
-        
+      // <View style={styles.container}>
+
         <DateRangePicker
           onChange={this.setDates}
           endDate={endDate}
@@ -33,27 +33,40 @@ export default class DateRange extends React.Component {
           displayedDate={displayedDate}
           range
         >
-          <Text 
-          style={[MainStyles.HeadingOne,{borderWidth:1,borderColor:'#ccc',borderRadius:4,padding:10}]}
-          >
-            Select Date Range</Text>
-        </DateRangePicker>
-          <View style={{flexDirection:'row',paddingTop:20}}>
-          <Text style={[MainStyles.HeadingOne,{marginRight:20}]}>From: 
-            <Text style={MainStyles.HeadingOneLight}>  {startDate == null ? "null":startDate.format('YYYY-MM-DD')} {"\n"}</Text>
-          </Text>
-          <Text style={MainStyles.HeadingOne}>To: 
-            <Text style={MainStyles.HeadingOneLight}>  {endDate == null ? "null": endDate.format('YYYY-MM-DD')}</Text>
-          </Text>
+            
+
+        <View style={{
+          marginTop:40,
+          flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+            
+          <View style={{flexDirection:'row'}}>
+            <Text style={[MainStyles.HeadingOne,{marginRight:20}]}>From: 
+              <Text style={MainStyles.HeadingOneLight}>  {startDate == null ? "null":startDate.format('YYYY-MM-DD')} {"\n"}</Text>
+            </Text>
+            <Text style={MainStyles.HeadingOne}>To: 
+              <Text style={MainStyles.HeadingOneLight}>  {endDate == null ? "null": endDate.format('YYYY-MM-DD')}</Text>
+            </Text>
           </View>
-      </View>
+          <Text 
+            style={[MainStyles.HeadingOne,{
+              width:200,
+              textAlign:'center',
+              borderWidth:1,borderColor:'#ccc',
+              borderRadius:4,padding:10}]}
+            >
+            Select Date Range
+            </Text>
+          </View>
+        </DateRangePicker>
+      // </View>
     );
   }
 }
  
 const styles = StyleSheet.create({
   container: {
-    marginBottom:20,
+    flex:1,
+    marginBottom:40,
     backgroundColor: "#fff",
     alignItems: "center",
   }

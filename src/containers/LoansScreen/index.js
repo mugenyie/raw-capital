@@ -1,6 +1,6 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Dimensions, FlatList, ScrollView, Icon} from 'react-native';
+import { View, Text, StyleSheet, Dimensions, FlatList, ScrollView, Icon, Platform} from 'react-native';
 import {Container, Content, Button} from 'native-base';
 import SimpleHeader from '../../components/SimpleHeader';
 import LoansTable from '../../components/LoansTable';
@@ -19,19 +19,14 @@ class LoansScreen extends Component {
         return (
             <Container style={styles.container}>
                 <SimpleHeader {...this.props} HeaderTitle="Loans Issued"/>
-                <Content style={styles.content}>
-                    <View style={{alignItems:'center'}}> 
-                        <DateRange />
-                        <Button
-                        style={[MainStyles.ButtonStyle,{width:ScreenWidth*0.9,marginBottom:20}]}
-                        >
-                            <Text style={[MainStyles.HeadingOne,{color:'#fff'}]}>Load data</Text>
-                        </Button>
-                    </View>
-                    <View style={{zIndex:-2}}>
-                        <LoansTable />
-                    </View>
-                </Content>
+                <DateRange />
+                <Button
+                style={[MainStyles.ButtonStyle,{width:ScreenWidth*0.8,alignSelf:"center",elevation:0}]}
+                >
+                    <Text style={[MainStyles.HeadingOne,{color:'#fff'}]}>Load data</Text>
+                </Button>
+                <View style={{paddingTop:40}}/>
+                <LoansTable />
             </Container>
         );
     }
@@ -44,8 +39,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFFFFF'
     },
     content: {
-        flex:1,
-        paddingTop:40
+        
+        zIndex:-2
     }
 });
 

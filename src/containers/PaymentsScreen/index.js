@@ -3,11 +3,12 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, Dimensions, FlatList, ScrollView, Icon} from 'react-native';
 import {Container, Content, Button} from 'native-base';
 import SimpleHeader from '../../components/SimpleHeader';
-import PaybacksTable from '../../components/PaybacksTable';
+import LoanTable from '../../components/LoansTable';
 import DateRange from '../../components/DateRange';
 
 import MainStyles from '../../common/MainStyles';
 import Color from '../../common/Color';
+import LoansTable from '../../components/LoansTable';
 
 const ScreenWidth = Dimensions.get('window').width;
 const ScreenHeight = Dimensions.get('window').height;
@@ -18,20 +19,15 @@ class PaymentsScreen extends Component {
     render() {
         return (
             <Container style={styles.container}>
-                <SimpleHeader {...this.props} HeaderTitle="Paybacks"/>
-                <Content style={styles.content}>
-                    <View style={{alignItems:'center'}}> 
-                        <DateRange />
-                        <Button
-                        style={[MainStyles.ButtonStyle,{width:ScreenWidth*0.9,marginBottom:20}]}
-                        >
-                            <Text style={[MainStyles.HeadingOne,{color:'#fff'}]}>Load data</Text>
-                        </Button>
-                    </View>
-                    <View style={{zIndex:-10}}>
-                    <PaybacksTable />
-                    </View>
-                </Content>
+                <SimpleHeader {...this.props} HeaderTitle="Loans Issued"/>
+                <DateRange />
+                <Button
+                style={[MainStyles.ButtonStyle,{width:ScreenWidth*0.8,alignSelf:"center",elevation:0}]}
+                >
+                    <Text style={[MainStyles.HeadingOne,{color:'#fff'}]}>Load data</Text>
+                </Button>
+                <View style={{paddingTop:40}}/>
+                <LoansTable />
             </Container>
         );
     }

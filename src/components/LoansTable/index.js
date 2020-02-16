@@ -13,46 +13,54 @@ class LoansTable extends Component {
     return (
       <DataTable>
         <DataTable.Header>
-            <DataTable.Title>DATE</DataTable.Title>
-            <DataTable.Title>ISSUED</DataTable.Title>
-            <DataTable.Title>PAID BACK</DataTable.Title>
+            <DataTable.Title style={{justifyContent:'center'}}>DATE</DataTable.Title>
+            <DataTable.Title style={{justifyContent:'center'}}>ISSUED</DataTable.Title>
+            <DataTable.Title style={{justifyContent:'center'}}>PAID BACK</DataTable.Title>
         </DataTable.Header>
 
         <DataTable.Row>
-            <DataTable.Cell>Aug 14, 2019</DataTable.Cell>
-            <DataTable.Cell>10,000</DataTable.Cell>
-            <DataTable.Cell>5,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>Aug 14, 2019</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>10,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>5,000</DataTable.Cell>
         </DataTable.Row>
+
         <DataTable.Row>
-            <DataTable.Cell>Aug 14, 2019</DataTable.Cell>
-            <DataTable.Cell>10,000</DataTable.Cell>
-            <DataTable.Cell>5,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>Aug 14, 2019</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>10,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>5,000</DataTable.Cell>
         </DataTable.Row>
+
         <DataTable.Row>
-            <DataTable.Cell>Aug 14, 2019</DataTable.Cell>
-            <DataTable.Cell>10,000</DataTable.Cell>
-            <DataTable.Cell>5,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>Aug 14, 2019</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>10,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>5,000</DataTable.Cell>
         </DataTable.Row>
+
         <DataTable.Row>
-            <DataTable.Cell>Aug 14, 2019</DataTable.Cell>
-            <DataTable.Cell>10,000</DataTable.Cell>
-            <DataTable.Cell>5,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>Aug 14, 2019</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>10,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>5,000</DataTable.Cell>
         </DataTable.Row>
+
         <DataTable.Row>
-            <DataTable.Cell>Aug 14, 2019</DataTable.Cell>
-            <DataTable.Cell>10,000</DataTable.Cell>
-            <DataTable.Cell>5,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>Aug 14, 2019</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>10,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>5,000</DataTable.Cell>
         </DataTable.Row>
+
         <DataTable.Row>
-            <DataTable.Cell>Aug 14, 2019</DataTable.Cell>
-            <DataTable.Cell>10,000</DataTable.Cell>
-            <DataTable.Cell>5,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>Aug 14, 2019</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>10,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>5,000</DataTable.Cell>
         </DataTable.Row>
+
         <DataTable.Row>
-            <DataTable.Cell>Aug 14, 2019</DataTable.Cell>
-            <DataTable.Cell>10,000</DataTable.Cell>
-            <DataTable.Cell>5,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>Aug 14, 2019</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>10,000</DataTable.Cell>
+            <DataTable.Cell style={{justifyContent:'center'}}>5,000</DataTable.Cell>
         </DataTable.Row>
+        
+
         <DataTable.Pagination
         page={1}
         numberOfPages={3}

@@ -8,48 +8,73 @@ export default class CustomerTable extends React.Component {
     return (
       <DataTable>
         <DataTable.Header>
-          <DataTable.Title>Name</DataTable.Title>
-          <DataTable.Title numeric>Phone</DataTable.Title>
+          <DataTable.Title style={{justifyContent:'center'}}>Date Joined</DataTable.Title>
+          <DataTable.Title style={{justifyContent:'center'}}>Name</DataTable.Title>
+          <DataTable.Title style={{justifyContent:'center'}} numeric>Phone</DataTable.Title>
         </DataTable.Header>
 
         <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
-          <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
-          <DataTable.Cell numeric>256701410015</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
         <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
-          <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
-          <DataTable.Cell numeric>256701410015</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
         <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
-          <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
-          <DataTable.Cell numeric>256701410015</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
         <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
-          <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
-          <DataTable.Cell numeric>256701410015</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
         <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
-          <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
-          <DataTable.Cell numeric>256701410015</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
         <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
-          <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
-          <DataTable.Cell numeric>256701410015</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
         <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
-          <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
-          <DataTable.Cell numeric>256701410015</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
         <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
-          <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
-          <DataTable.Cell numeric>256701410015</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
+        </DataTable.Row>
+
+        <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
+          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
+        </DataTable.Row>
+        <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
+          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
+        </DataTable.Row>
+        <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
+          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
+          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
         <DataTable.Pagination
