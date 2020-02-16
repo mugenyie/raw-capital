@@ -28,7 +28,7 @@ class LoginScreen extends Component {
                 </View>
 
                 <View>
-                    <Icon style={styles.iconStyle} color={Color.PrimaryDark} name="ios-person" size={25}/>
+                    <Icon style={styles.iconStyle} color={Color.PrimaryDark} name="person" size={25}/>
                     <TextInput
                     style={[styles.Input,MainStyles.HeadingOne,{fontSize:15}]}
                     onChangeText={username => this.setState({username})}
@@ -38,7 +38,7 @@ class LoginScreen extends Component {
                 </View>
 
                 <View style={{marginTop:10}}>
-                    <Icon style={styles.iconStyle} color={Color.PrimaryDark} name="ios-lock" size={25}/>
+                    <Icon style={styles.iconStyle} color={Color.PrimaryDark} name="lock" size={25}/>
                     <TextInput
                     autoCorrect={false}
                     secureTextEntry
@@ -49,7 +49,9 @@ class LoginScreen extends Component {
                     />
                 </View>
 
-                <Button style={[styles.buttonStyle,{justifyContent:'center',alignContent:'center'}]} onPress={() => this.props.navigation.navigate("HomeScreen")}>
+                <Button
+                style={[MainStyles.ButtonStyle,{width:ScreenWidth*0.5}]}
+                onPress={() => this.props.navigation.navigate("HomeScreen")}>
                     <Text style={[MainStyles.HeadingOne,{fontSize:18,color:'#fff'}]}>LOGIN</Text>
                 </Button>
 

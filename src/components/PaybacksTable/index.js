@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { DataTable } from 'react-native-paper';
 import { View, Text } from 'react-native';
 
-class LoansTable extends Component {
+class PaybacksTable extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,8 +14,8 @@ class LoansTable extends Component {
       <DataTable>
         <DataTable.Header>
             <DataTable.Title>DATE</DataTable.Title>
-            <DataTable.Title>ISSUED</DataTable.Title>
             <DataTable.Title>PAID BACK</DataTable.Title>
+            <DataTable.Title>AMOUNT LEFT</DataTable.Title>
         </DataTable.Header>
 
         <DataTable.Row>
@@ -64,4 +64,4 @@ class LoansTable extends Component {
   } 
 }
 
-export default LoansTable;
+export default PaybacksTable;

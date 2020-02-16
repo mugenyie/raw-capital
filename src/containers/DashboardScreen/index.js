@@ -26,7 +26,7 @@ class DashboardScreen extends Component {
             <TouchableOpacity
             onPress={() => this.openDrawer()}
             >
-                <Icon name="ios-menu" size={24} color={Color.PrimaryDark}/>
+                <Icon name="menu" size={24} color={Color.PrimaryDark}/>
             </TouchableOpacity>
         )
     }
@@ -36,7 +36,7 @@ class DashboardScreen extends Component {
             <TouchableOpacity
             onPress={() => alert("Are you sure you want to logOut ?")}
             >
-                <Icon name="ios-power" size={20} color={Color.PrimaryDark}/>
+                <Icon name="power" size={20} color={Color.PrimaryDark}/>
             </TouchableOpacity>
         )
     }
