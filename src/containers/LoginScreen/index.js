@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
         width:ScreenWidth*0.9, 
         elevation: 1,
         borderColor:'#ccc',
-        borderWidth: 0.2, 
+        borderWidth: 0.5, 
         borderRadius:8,
         marginTop:8,
         paddingLeft: 50

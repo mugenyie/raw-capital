@@ -1,6 +1,6 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, TextInput } from 'react-native';
+import { View, Text, StyleSheet, TextInput,Platform } from 'react-native';
 import {Header, Left, Right, Body, Icon, Title, Item, Input, Button} from 'native-base';
 
 import Color from '../../common/Color';
@@ -9,7 +9,11 @@ import Color from '../../common/Color';
 class HeaderSearchBar extends Component {
     render() {
         return (
-            <Header searchBar rounded iosBarStyle="dark-content">
+            <Header 
+            searchBar rounded 
+            style={{backgroundColor:(Platform.OS == "android") ? Color.PrimaryDark : ""}}
+            androidStatusBarColor={Color.PrimaryDark} 
+            iosBarStyle="dark-content">
                 <Item>
                     <Icon name="ios-search" />
                     <Input placeholder="Search customer name..." />
