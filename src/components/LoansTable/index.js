@@ -47,18 +47,6 @@ class LoansTable extends Component {
             <DataTable.Cell style={{justifyContent:'center'}}>10,000</DataTable.Cell>
             <DataTable.Cell style={{justifyContent:'center'}}>5,000</DataTable.Cell>
         </DataTable.Row>
-
-        <DataTable.Row>
-            <DataTable.Cell style={{justifyContent:'center'}}>Aug 14, 2019</DataTable.Cell>
-            <DataTable.Cell style={{justifyContent:'center'}}>10,000</DataTable.Cell>
-            <DataTable.Cell style={{justifyContent:'center'}}>5,000</DataTable.Cell>
-        </DataTable.Row>
-
-        <DataTable.Row>
-            <DataTable.Cell style={{justifyContent:'center'}}>Aug 14, 2019</DataTable.Cell>
-            <DataTable.Cell style={{justifyContent:'center'}}>10,000</DataTable.Cell>
-            <DataTable.Cell style={{justifyContent:'center'}}>5,000</DataTable.Cell>
-        </DataTable.Row>
         
 
         <DataTable.Pagination

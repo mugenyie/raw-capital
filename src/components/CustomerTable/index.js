@@ -49,11 +49,6 @@ export default class CustomerTable extends React.Component {
           <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
-        <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
-          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
-          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
-          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
-        </DataTable.Row>
 
         <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
           <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
@@ -61,16 +56,7 @@ export default class CustomerTable extends React.Component {
           <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
-        <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
-          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
-          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
-          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
-        </DataTable.Row>
-        <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
-          <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
-          <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
-          <DataTable.Cell style={{justifyContent:'center'}} numeric>256701410015</DataTable.Cell>
-        </DataTable.Row>
+
         <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
           <DataTable.Cell style={{justifyContent:'center'}}>2019/02/12</DataTable.Cell>
           <DataTable.Cell style={{justifyContent:'center'}}>Asiimwe Dennis</DataTable.Cell>
