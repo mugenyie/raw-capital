@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Image, Dimensions, TouchableOpacity } from 'react-native';
 import {Container, Content, Card, Button} from 'native-base';
-import LoansTable from '../../components/LoansTable'
+import SimpleLoansTable from '../../components/SimpleLoansTable';
 import Icon from 'react-native-vector-icons/Ionicons';
 import MainStyles from '../../common/MainStyles';
 import Color from '../../common/Color';
@@ -55,7 +55,7 @@ class CustomerScreen extends Component {
                         </TouchableOpacity>
                     </View>
                     <View style={{borderBottomWidth:0.5,borderBottomColor:'#ccc',paddingTop:4,marginBottom:5}}/>
-                    <LoansTable />
+                    <SimpleLoansTable />
                 </Content>
             </Container>
         );

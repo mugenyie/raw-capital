@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import Color from '../common/Color';
 
 const MainStyles = StyleSheet.create({
     HeadingOne: {
@@ -13,6 +14,12 @@ const MainStyles = StyleSheet.create({
         borderWidth:1,
         borderColor:'#f8f8f8',
         elevation: 2
+    },
+    ButtonStyle:{
+        backgroundColor:Color.PrimaryDark,
+        justifyContent:'center',
+        alignContent:'center',marginTop:20,
+        borderRadius:4,elevation:4
     }
 });
 

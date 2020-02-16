@@ -24,7 +24,7 @@ class SideBar extends Component {
                 </View>
                 <Content style={{flex:0.6, marginTop:80}}>
                     <ListItem>
-                        <Icon name="ios-person"/>
+                        <Icon name="person"/>
                         <Body>
                         <TouchableOpacity>
                         <Text style={[MainStyles.HeadingOne,{paddingLeft:10}]}>Profile</Text>
@@ -33,7 +33,7 @@ class SideBar extends Component {
                     </ListItem>
 
                     <ListItem style={{marginTop:10}}>
-                        <Icon name="ios-settings"/>
+                        <Icon name="settings"/>
                         <Body>
                             <TouchableOpacity>
                             <Text style={[MainStyles.HeadingOne,{paddingLeft:10}]}>Trust Network Settings</Text>
@@ -42,7 +42,7 @@ class SideBar extends Component {
                     </ListItem>
 
                     <ListItem>
-                        <Icon name="md-information-circle"/>
+                        <Icon name="information-circle"/>
                         <Body>
                         <TouchableOpacity>
                             <Text style={[MainStyles.HeadingOne,{paddingLeft:10}]}>About</Text>

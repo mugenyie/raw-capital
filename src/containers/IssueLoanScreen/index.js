@@ -49,7 +49,8 @@ class IssueLoanScreen extends Component {
 
                     <Button 
                     onPress={() => alert("Loan Issued")}
-                    style={{backgroundColor:Color.PrimaryDark,justifyContent:'center',alignContent:'center',marginTop:20,borderRadius:4,elevation:4}}>
+                    style={MainStyles.ButtonStyle}
+                    >
                         <Text style={[MainStyles.HeadingOne,{color:'#fff'}]}>ISSUE LOAN</Text>
                     </Button>
                 </Content>
