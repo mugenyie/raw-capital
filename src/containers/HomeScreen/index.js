@@ -50,7 +50,7 @@ const TabNavigator = createBottomTabNavigator({
   Paybacks: {
     screen: PaymentsScreen,
     navigationOptions:{  
-      tabBarLabel:'Payments',  
+      tabBarLabel:'Paybacks',  
       tabBarIcon:({tintColor})=>(  
           <Icon name="ios-cash" color={tintColor} size={25}/>  
       )  

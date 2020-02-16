@@ -69,9 +69,9 @@ class DashboardScreen extends Component {
                         
 
                         <View style={{flex:1, marginTop:14, marginBottom: 20}}>
-                            <CardInfo title="LOAN BOOK" subTitle="Total amount of money currently lent out" number="UGX 90,000" />
-                            <CardInfo title="PROFIT / LOSS" subTitle="" number="UGX -1,000"/>
-                            <CardInfo title="CUSTOMERS" subTitle="" number="200"/>
+                            <CardInfo onPress={() => this.props.navigation.navigate("Loans")} title="LOAN BOOK" subTitle="Total amount of money currently lent out" number="UGX 90,000" />
+                            <CardInfo onPress={() => this.props.navigation.navigate("Paybacks")} title="PROFIT / LOSS" subTitle="" number="UGX -1,000"/>
+                            <CardInfo onPress={() => this.props.navigation.navigate("Customers")} title="CUSTOMERS" subTitle="" number="200"/>
                         </View>
                     </ScrollView>
                 </GestureRecognizer>

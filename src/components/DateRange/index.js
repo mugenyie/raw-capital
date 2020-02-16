@@ -53,7 +53,7 @@ export default class DateRange extends React.Component {
  
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    marginBottom:20,
     backgroundColor: "#fff",
     alignItems: "center",
   }

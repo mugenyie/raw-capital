@@ -28,7 +28,9 @@ class LoansScreen extends Component {
                             <Text style={[MainStyles.HeadingOne,{color:'#fff'}]}>Load data</Text>
                         </Button>
                     </View>
-                    <LoansTable />
+                    <View style={{zIndex:-2}}>
+                        <LoansTable />
+                    </View>
                 </Content>
             </Container>
         );

@@ -1,6 +1,6 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, TextInput,Dimensions } from 'react-native';
+import { View, Text, StyleSheet, TextInput,Dimensions,Platform } from 'react-native';
 import { Container, Header, Content, Form, Item, Input, Label, Button } from 'native-base';
 import Color from '../../common/Color';
 import MainStyles from '../../common/MainStyles';
@@ -28,7 +28,7 @@ class IssueLoanScreen extends Component {
                     </View>
 
                     <View style={{flexDirection:'row',marginBottom:20}}>
-                        <Text style={[MainStyles.HeadingOne,{fontSize:15,top:18,marginRight:10}]}>Tenure (Loan validity in days) :</Text>
+                        <Text style={[MainStyles.HeadingOne,{fontSize:15,top:Platform.OS == "android" ? 18 : 0,marginRight:10}]}>Tenure (Loan validity in days) :</Text>
                         <TextInput
                         style={[MainStyles.HeadingOneLight,{fontSize:20,borderBottomWidth:1,borderBottomColor:'#aaa',paddingBottom:0,width:ScreenWidth*0.1}]}
                         onChangeText={tenure => this.setState({tenure})}
@@ -38,7 +38,7 @@ class IssueLoanScreen extends Component {
                     </View>
 
                     <View style={{flexDirection:'row',marginBottom:20}}>
-                        <Text style={[MainStyles.HeadingOne,{fontSize:15,top:18,marginRight:10}]}>Monthly Rate (%) :</Text>
+                        <Text style={[MainStyles.HeadingOne,{fontSize:15,top:Platform.OS == "android" ? 18 : 0,marginRight:10}]}>Monthly Rate (%) :</Text>
                         <TextInput
                         style={[MainStyles.HeadingOneLight,{fontSize:20,borderBottomWidth:1,borderBottomColor:'#aaa',paddingBottom:0,width:ScreenWidth*0.1}]}
                         onChangeText={rate => this.setState({rate})}

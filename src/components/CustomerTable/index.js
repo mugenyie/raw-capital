@@ -17,37 +17,37 @@ export default class CustomerTable extends React.Component {
           <DataTable.Cell numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
-        <DataTable.Row onPress={() => alert('hello')}>
+        <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
           <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
           <DataTable.Cell numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
-        <DataTable.Row onPress={() => alert('hello')}>
+        <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
           <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
           <DataTable.Cell numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
-        <DataTable.Row onPress={() => alert('hello')}>
+        <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
           <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
           <DataTable.Cell numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
-        <DataTable.Row onPress={() => alert('hello')}>
+        <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
           <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
           <DataTable.Cell numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
-        <DataTable.Row onPress={() => alert('hello')}>
+        <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
           <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
           <DataTable.Cell numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
-        <DataTable.Row onPress={() => alert('hello')}>
+        <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
           <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
           <DataTable.Cell numeric>256701410015</DataTable.Cell>
         </DataTable.Row>
 
-        <DataTable.Row onPress={() => alert('hello')}>
+        <DataTable.Row onPress={() => this.props.navigation.navigate("Profile")}>
           <DataTable.Cell>Asiimwe Dennis</DataTable.Cell>
           <DataTable.Cell numeric>256701410015</DataTable.Cell>
         </DataTable.Row>

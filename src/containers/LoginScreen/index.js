@@ -50,7 +50,7 @@ class LoginScreen extends Component {
                 </View>
 
                 <Button
-                style={[MainStyles.ButtonStyle,{width:ScreenWidth*0.5}]}
+                style={[MainStyles.ButtonStyle,{width:ScreenWidth*0.7,marginTop:80}]}
                 onPress={() => this.props.navigation.navigate("HomeScreen")}>
                     <Text style={[MainStyles.HeadingOne,{fontSize:18,color:'#fff'}]}>LOGIN</Text>
                 </Button>

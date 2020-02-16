@@ -19,7 +19,7 @@ class CustomerScreen extends Component {
                         <Image 
                         style={{paddingRight:20}}
                         source={{uri:"https://intelworldsstoragev2.blob.core.windows.net/loanme/256701410015_Dennis.jpg"}}
-                        style={[MainStyles.Card, {width: ScreenWidth*ImageWidth, height: ScreenWidth*ImageWidth, borderRadius: ScreenWidth*ImageWidth/2}]}
+                        style={[{borderWidth:1,borderColor:'#eee', width: ScreenWidth*ImageWidth, height: ScreenWidth*ImageWidth, borderRadius: ScreenWidth*ImageWidth/2}]}
                         />
                         <View style={{marginTop:ScreenWidth*0.07}}>
                             <Text style={[MainStyles.HeadingOne,styles.text]}>Asiimwe Dennis</Text>
