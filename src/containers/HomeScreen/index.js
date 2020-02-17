@@ -3,7 +3,7 @@ import { Text, View, Settings } from 'react-native';
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
-import {Icon} from 'native-base';  
+import Icon from 'react-native-vector-icons/Ionicons';  
 
 import MainStyles from '../../common/MainStyles';
 import SplashScreen from '../../containers/SplashScreen';

@@ -24,7 +24,7 @@ class CardInfo extends Component {
                     <View style={{flex:0.1, borderLeftColor:'#ccc', borderLeftWidth: 0.5,height:140}} />
                     <View style={{flex:0.1}}>
                         <TouchableOpacity onPress={this.props.onPress}>
-                            <Icon style={{marginTop:50}} name="ios-arrow-forward" size={25} color="#888"/>
+                            <Icon style={{marginTop:50}} name="ios-arrow-forward" color="#888"/>
                         </TouchableOpacity>
                     </View>
                 </View>
