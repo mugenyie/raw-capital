@@ -10,13 +10,13 @@ import SplashScreen from '../../containers/SplashScreen';
 import SettingsScreen from '../../containers/SettingsScreen';
 import Color from '../../common/Color';
 import DashboardScreen from '../DashboardScreen';
-import LoansScreen from '../LoansScreen';
-import PaymentsScreen from '../PaymentsScreen';
+import ActivityScreen from '../ActivityScreen';
 import CustomersScreen from '../CustomersScreen';
 import LoginScreen from '../LoginScreen';
 import CustomerProfile from '../CustomerProfile';
 import IssueLoanScreen from '../IssueLoanScreen';
 import CustomerSettingsScreen from '../CustomerSettingsScreen';
+import InvestorProfileScreen from '../InvestorProfileScreen';
 
 
 const TabNavigator = createBottomTabNavigator({
@@ -38,21 +38,21 @@ const TabNavigator = createBottomTabNavigator({
       )  
     }
   },
-  Loans: {
-    screen: LoansScreen,
+  Activity: {
+    screen: ActivityScreen,
     navigationOptions:{  
-      tabBarLabel:'Loans',  
+      tabBarLabel:'Activity',  
       tabBarIcon:({tintColor})=>(  
-          <Icon name="ios-card" color={tintColor} size={25}/>  
+          <Icon name="ios-pulse" color={tintColor} size={25}/>  
       )  
     }
   },
-  Paybacks: {
-    screen: PaymentsScreen,
+  Account: {
+    screen: InvestorProfileScreen,
     navigationOptions:{  
-      tabBarLabel:'Paybacks',  
+      tabBarLabel:'My Account',  
       tabBarIcon:({tintColor})=>(  
-          <Icon name="ios-cash" color={tintColor} size={25}/>  
+          <Icon name="ios-person" color={tintColor} size={25}/>  
       )  
     }
   }
